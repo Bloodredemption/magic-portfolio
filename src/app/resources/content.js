@@ -1,15 +1,15 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "EJ Lester",
+  lastName: "Pimentel",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  role: "Full-Stack Web Developer",
+  avatar: "/images/avatar.jpeg",
+  location: "Asia/Manila", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Tagalog", "Cebuano"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -17,8 +17,8 @@ const newsletter = {
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      I write about web development, share insights on full-stack technologies, and explore the 
+      synergy between design principles and software engineering.
     </>
   ),
 };
@@ -29,12 +29,12 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/Bloodredemption",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/ej-lester-pimentel-73b7b5274/",
   },
   {
     name: "X",
@@ -44,7 +44,7 @@ const social = [
   {
     name: "Email",
     icon: "email",
-    link: "mailto:example@gmail.com",
+    link: "mailto:pimentelejlester8@gmail.com",
   },
 ];
 
@@ -52,11 +52,10 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Design engineer and builder</>,
+  headline: <>Full-Stack Web Developer</>,
   subline: (
     <>
-      I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm EJ Lester, a full-stack web developer dedicated to creating scalable, user-friendly digital solutions. 
     </>
   ),
 };
@@ -81,9 +80,9 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        I am a Philippines-based Full-Stack Web Developer passionate about transforming complex challenges into intuitive,
+        elegant solutions. With a background in design and a passion for technology, I bring a unique blend of creativity
+        and technical expertise to craft digital solutions that not only meet but exceed user expectation and deliver impactful results.
       </>
     ),
   },
@@ -92,41 +91,37 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Freelance",
+        timeframe: "2022 - 2024",
+        role: "Graphic Designer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
-          </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Designed visually appealing logos, social media content, and marketing materials for various clients. 
+            Collaborated closely with clients to understand their needs, delivering creative solutions that aligned with their vision.
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Freelance",
+        timeframe: "2023 - 2024",
+        role: "Software Developer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Developed custom software solutions and applications for clients, mainly web development. 
+            Collaborated with clients to understand their requirements and deliver efficient, user-friendly solutions.
           </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Lily's Home and Pizza Ventures Inc.",
+        timeframe: "2025 - Present",
+        role: "Mobile App Developer",
+        achievements: [
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Designed and built a mobile application tailored for the crew, 
+            providing a dedicated interface for adding sales reports and viewing analytics.
           </>,
         ],
         images: [],
@@ -134,7 +129,7 @@ const about = {
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
+    display: false, // set to false to hide this section
     title: "Studies",
     institutions: [
       {
@@ -152,36 +147,40 @@ const about = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+        title: "Web Development",
+        description: <>Proficient in HTML, CSS, JavaScript, Python, PHP, and SQL for building functional and dynamic web applications.</>,
         // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+        title: "Database Management",
+        description: <>Experienced in MySQL for storing and managing data effectively.</>,
         // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
+      },
+      {
+        title: "Content Management",
+        description: <>Experienced in WordPress for creating and managing websites, including customization and plugin integration.</>,
+        // optional: leave the array empty if you don't want to display images
+        images: [],
+      },
+      {
+        title: "Version Control",
+        description: <>Knowledgeable in Git and GitHub for managing code versions, collaborating, and ensuring project stability.</>,
+        // optional: leave the array empty if you don't want to display images
+        images: [],
+      },
+      {
+        title: "Graphic Design",
+        description: <>Experienced with Adobe Photoshop, Illustrator, Figma, and Canva for creating engaging graphics, branding, and layouts.</>,
+        // optional: leave the array empty if you don't want to display images
+        images: [],
+      },
+      {
+        title: "Debugging & Testing",
+        description: <>Ability to debug issues and test code for reliable application performance.</>,
+        // optional: leave the array empty if you don't want to display images
+        images: [],
       },
     ],
   },
